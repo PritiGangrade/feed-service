@@ -33,15 +33,15 @@ public class SQLLiteDAO
 	      Statement statement = connection.createStatement();
 	      statement.setQueryTimeout(30);  // set timeout to 30 sec.
 	      
-	      statement.executeUpdate("drop table if exists feed");
+	      //statement.executeUpdate("drop table if exists feed");
 	      statement.executeUpdate("create table feed (id string PRIMARY KEY, name string)");
-	      statement.executeUpdate("drop table if exists article");
+	      //statement.executeUpdate("drop table if exists article");
 	      statement.executeUpdate("create table article (id string PRIMARY KEY, title string, url string, body string)");
-	      statement.executeUpdate("drop table if exists feed_article_map");
+	      //statement.executeUpdate("drop table if exists feed_article_map");
 	      statement.executeUpdate("create table feed_article_map (feed_id string REFERENCES feed(id) ON UPDATE CASCADE, article_id string REFERENCES article(id) ON UPDATE CASCADE)");
-	      statement.executeUpdate("drop table if exists user");
+	      //statement.executeUpdate("drop table if exists user");
 	      statement.executeUpdate("create table user (id string, name string)");
-	      statement.executeUpdate("drop table if exists user_feed_map");
+	      //statement.executeUpdate("drop table if exists user_feed_map");
 	      statement.executeUpdate("create table user_feed_map (user_id string REFERENCES user(id) ON UPDATE CASCADE, feed_id string REFERENCES feed(id) ON UPDATE CASCADE)");
 	      statement.executeUpdate("insert into user values ('1', 'priti-1')");
 	      statement.executeUpdate("insert into user values ('2', 'priti-2')");
