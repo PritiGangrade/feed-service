@@ -17,7 +17,8 @@ These instructions will get you a copy of the project up and running on your loc
 Testing with Postman for localhost env:
 https://documenter.getpostman.com/view/2652877/feedreaderservice/6nBuqFi
 
-```The feed-service supports following RESTful methods: 
+```
+The feed-service supports following RESTful methods: 
 
 -create a Feed (PUT)
 
@@ -33,7 +34,8 @@ https://documenter.getpostman.com/view/2652877/feedreaderservice/6nBuqFi
 ```
 
 ### Work-in-progress
-```junit testing
+```
+junit testing
 uuid instead of simple id
 logging with log4j
 code cleanup
