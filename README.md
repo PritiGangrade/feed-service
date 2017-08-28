@@ -27,7 +27,14 @@ https://documenter.getpostman.com/view/2652877/feedreaderservice/6nBuqFi
 
 -unsubscribe a user to a feed (POST)
 
-get user's feed (GET)
+-get user's feed (GET)
 
-get user's articles (GET)
+-get user's articles (GET)
+```
+
+### Work-in-progress
+```junit testing
+uuid instead of simple id
+logging with log4j
+code cleanup
 ```
