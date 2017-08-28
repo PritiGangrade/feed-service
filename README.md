@@ -1,12 +1,33 @@
-Readme
-The feed-service supports following RESTful methods: 
--add a Feed 
--add an article to the feed, prereq: feed needs to exist
--subscribe a user to a feed
--unsubscribe a user to a feed
--get all feeds user has subscribed to
--get all articles from the set of feeds user is subscribed to
+# Feed Reader Service
 
+## Getting Started
 
-Post testcases:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+```java 8, tomcat 9, maven, postman```
+
+## Built With & Deployment
+
+```mvn clean install```
+
+## Running the tests
+
+Testing with Postman for localhost env:
 https://documenter.getpostman.com/view/2652877/feedreaderservice/6nBuqFi
+
+```The feed-service supports following RESTful methods: 
+
+-create a Feed (PUT)
+
+-create an article, prereq: feed needs to exist (PUT)
+
+-subscribe a user to a feed (POST)
+
+-unsubscribe a user to a feed (POST)
+
+get user's feed (GET)
+
+get user's articles (GET)
+```
